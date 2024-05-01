@@ -14,7 +14,13 @@ app.get('/', (req, res) => {
   res.send("server is...");
 });
 
+
+
 app.use('/api/v1', AllRoutes);
+
+app.get("/register",(req,res)=>{
+  return res.send("register page")
+})
 
 
 mongoose.connect(process.env.DATABASE_URL).then(() => {

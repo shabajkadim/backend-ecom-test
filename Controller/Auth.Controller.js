@@ -3,6 +3,11 @@ import UserSchema from "../Modal/User.Schema.js"
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
+export const Register=(req,res)=>{
+    return res.send("Register page")
+}
+
+
 
 export const SignUp = async (req, res) => {
     try {
